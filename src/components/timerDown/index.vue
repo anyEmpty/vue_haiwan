@@ -27,7 +27,7 @@ export default {
       startTimer = (new Date(startTimer).getTime()) + SET_TIME_LONG
       let endTimer = Date.now()
       let long = Number(startTimer) - Number(endTimer)
-      let timer = setInterval(() => {
+      this.timer = setInterval(() => {
         if (long > 0) {
           let obj = this._countTime(long)
           this.$nextTick(() => {
@@ -36,7 +36,7 @@ export default {
           })
           long = long - 1000
         } else {
-          clearInterval(timer)
+          clearInterval(this.timer)
           this.showFlag = false
           // orderlist 组建倒计时结束后需要删除该数据
           if (this.dataList) {
@@ -57,7 +57,10 @@ export default {
     },
     // orderlist 组建倒计时结束后需要删除该数据  列表数据
     dataList: {
-      type: Array
+      type: Array,
+      default () {
+        return []
+      }
     },
     // orderlist 组建倒计时结束后需要删除该数据  列表数据index
     index: {
@@ -78,11 +81,15 @@ export default {
         fen: 0,
         miao: 0
       },
-      showFlag: true
+      showFlag: true,
+      Timer: ''
     }
   },
   created () {
     this._timeDown(this.startPropsTimer)
+  },
+  beforeDestory () {
+    clearInterval(this.timer)
   }
 }
 </script>
