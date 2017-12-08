@@ -1,0 +1,18 @@
+
+.border-1px (@radius) {
+	position: relative;
+	&:after{
+		position: absolute;
+		display: block;
+		bottom: 0;
+		left: 0;
+		border-top: 1px solid @radius;
+		content: '';
+		width: 100%;
+	}
+}
+.border-none () {
+	&:after{
+		display: none !important;
+	}
+}
