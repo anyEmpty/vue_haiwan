@@ -1,30 +1,14 @@
 # haiwan
 
-> A Vue.js project
+## 海湾国家森林公园 公众号 vue重构 完整功能
 
-## Build Setup
+## 后台服务已关闭， 无法访问接口
 
-``` bash
-# install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 图片示例
+![图片示例](https://anyempty.github.io/vue-date-pick/444.png)

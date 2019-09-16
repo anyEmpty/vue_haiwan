@@ -2,9 +2,9 @@
 // 开发环境
 // const apiUrl = 'http://172.16.107.232:8080'
 // 测试环境
-const apiUrl = 'http://172.16.107.224:8080'
+// const apiUrl = 'http://172.16.107.224:8080'
 // 线上环境
-// const apiUrl = 'http://linktownfront.cdxzhi.com'
+const apiUrl = 'http://linktownfront.cdxzhi.com'
 // uat环境
 // const apiUrl = 'http://uat.linktownfront.cdxzhi.com'
 /* 支付接口 */
